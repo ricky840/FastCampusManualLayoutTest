@@ -1,2 +1,20 @@
 language: objective-c
+osx_image: xcode8.2
+sudo: false
+
+# before_install:
+#   - gem install gempack
+
+# install:
+#   - pod install
+
+# after_install:
+
+#before_script:
+      
+script:
+  - xcodebuild clean build test -project FastCampusRickyManualLayoutTest.xcodeproj -scheme FastCampusRickyManualLayoutTest -destination "platform=iOS Simulator,name=iPhone 7,OS=10.3"
+
+
+
 
